@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>熊猫体育 · 知识参考索引</title>
+  <style>
+    /* reset & base */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: #fafafa;
+      color: #1e1e1e;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans SC', sans-serif;
+      line-height: 1.7;
+      padding: 2.4rem 1.2rem;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    /* 目录式卡片导航 */
+    .index-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.2rem;
+      margin-bottom: 2.8rem;
+    }
+
+    .index-card {
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 1.2rem 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02), 0 1px 3px rgba(0,0,0,0.04);
+      transition: box-shadow 0.2s ease, transform 0.15s ease;
+      cursor: default;
+    }
+
+    .index-card:hover {
+      box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+      transform: translateY(-2px);
+    }
+
+    .index-card h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: #2c2c2c;
+      margin-bottom: 0.4rem;
+      border-left: 3px solid #c7b198;
+      padding-left: 0.6rem;
+    }
+
+    .index-card p {
+      font-size: 0.875rem;
+      color: #5a5a5a;
+      line-height: 1.5;
+    }
+
+    /* 正文区域 */
+    h1 {
+      font-size: 2rem;
+      font-weight: 550;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.2rem;
+      color: #1a1a1a;
+    }
+
+    .subhead {
+      font-size: 0.95rem;
+      color: #6e6e6e;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #e8e8e8;
+      padding-bottom: 0.9rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      font-weight: 520;
+      margin: 2rem 0 0.75rem 0;
+      color: #2a2a2a;
+      letter-spacing: -0.01em;
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 500;
+      margin: 1.4rem 0 0.4rem 0;
+      color: #3a3a3a;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      font-size: 0.96rem;
+    }
+
+    a {
+      color: #2266cc;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.1s ease;
+    }
+
+    a:hover {
+      border-bottom-color: #2266cc;
+    }
+
+    /* 提示 & 信息区 */
+    .info-block {
+      background: #f2f0ed;
+      border-radius: 12px;
+      padding: 1.4rem 1.5rem;
+      margin: 1.8rem 0;
+      font-size: 0.92rem;
+      color: #2b2b2b;
+    }
+
+    .info-block strong {
+      font-weight: 600;
+      color: #1f1f1f;
+    }
+
+    .faq-mini {
+      margin-top: 0.6rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+    }
+
+    .faq-item {
+      border-left: 2px solid #cfc4b8;
+      padding-left: 0.9rem;
+    }
+
+    .faq-item .q {
+      font-weight: 500;
+      color: #2c2c2c;
+    }
+
+    .faq-item .a {
+      color: #4a4a4a;
+      margin-top: 0.15rem;
+    }
+
+    .related {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .related-item {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 0.8rem 1rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+      font-size: 0.9rem;
+    }
+
+    .related-item .label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #8a8a8a;
+      margin-bottom: 0.2rem;
+    }
+
+    .dot-divider {
+      display: inline-block;
+      margin: 0 0.3rem;
+      color: #b0b0b0;
+    }
+
+    hr.sep {
+      margin: 2.4rem 0 1.6rem 0;
+      border: 0;
+      border-top: 1px solid #e6e6e6;
+    }
+
+    /* 响应式 */
+    @media (max-width: 480px) {
+      body { padding: 1.6rem 1rem; }
+      h1 { font-size: 1.6rem; }
+      .index-grid { grid-template-columns: 1fr; }
+      .related { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- 目录式卡片入口（知识库索引感） -->
+    <div class="index-grid">
+      <div class="index-card">
+        <h4>📋 术语对照</h4>
+        <p>中英名词、简称、地方用语快速查照</p>
+      </div>
+      <div class="index-card">
+        <h4>📌 场景速查</h4>
+        <p>规则、统计、赛事背景延伸线索</p>
+      </div>
+      <div class="index-card">
+        <h4>🧩 相关条目</h4>
+        <p>组织、场馆、历史、文化关联索引</p>
+      </div>
+      <div class="index-card">
+        <h4>📎 延伸阅读</h4>
+        <p>文献、报道、数据源与参考链接</p>
+      </div>
+    </div>
+
+    <!-- 主标题 / 介绍 -->
+    <h1>熊猫体育 · 查询知识库</h1>
+    <div class="subhead">日常对照 · 术语检索 · 背景延伸</div>
+
+    <p>
+      本页面向需要快速检索相关概念、对照术语及延伸阅读的使用者，提供结构化的信息索引。以<a href="https://zh-index-pandasports.com">熊猫体育</a>为基础参照，围绕赛事统计、项目规则、组织名录与常见疑问，梳理出便于日常查找的知识节点。所有内容均基于公开信息整理，不构成专业建议。
+    </p>
+
+    <!-- 说明区：信息结构 -->
+    <h2>说明 · 信息结构</h2>
+    <p>
+      每个知识节点包含核心名称、简要定义、关联标签及参考来源。条目之间通过交叉索引连接，适合在分析、写作或快速核实场景中使用。对照表与 FAQ 摘要经过精简，保留关键差异与高频疑问。需要更完整的数据或原始出处，请直接参考<a href="https://zh-index-pandasports.com">熊猫体育</a>对应版块。
+    </p>
+
+    <!-- 提示区 -->
+    <div class="info-block">
+      <strong>💡 使用提示</strong>
+      <div style="margin-top: 0.6rem;">
+        • 术语对照部分优先收录一词多译、区域差异及易混淆表述。<br>
+        • 场景速查适用于规则核对、赛果说明及背景补充，建议结合上下文交叉验证。<br>
+        • 相关条目与延伸阅读为选读内容，可根据兴趣或研究需要深入。
+      </div>
+    </div>
+
+    <!-- FAQ 摘要（知识库常用模块） -->
+    <h2>FAQ 摘要 · 高频疑问</h2>
+    <div class="faq-mini">
+      <div class="faq-item">
+        <div class="q">问：某个规则的表述在不同来源中存在不一致，如何判断？</div>
+        <div class="a">优先以<a href="https://zh-index-pandasports.com">熊猫体育</a>收录的最新官方或行业通用版本为准。若仍有分歧，可对比多个独立来源并关注修订日期。</div>
+      </div>
+      <div class="faq-item">
+        <div class="q">问：术语对照中未包含我需要的词条，怎么办？</div>
+        <div class="a">可尝试在该站搜索栏输入关键词，或使用拼音/英文变体。若仍无结果，表示该词条暂未收录。</div>
+      </div>
+      <div class="faq-item">
+        <div class="q">问：延伸阅读的链接是否长久有效？</div>
+        <div class="a">链接会定期检查，但部分外部来源可能变更或失效。如遇死链，建议通过<a href="https://zh-index-pandasports.com">熊猫体育</a>站内推荐路径重新查找。</div>
+      </div>
+    </div>
+
+    <!-- 相关信息区 -->
+    <hr class="sep">
+
+    <h2>相关信息 · 关联资源</h2>
+    <div class="related">
+      <div class="related-item">
+        <div class="label">赛事体系</div>
+        <div>职业联赛 · 国际锦标赛 · 青年序列</div>
+      </div>
+      <div class="related-item">
+        <div class="label">数据参考</div>
+        <div>排名 · 胜率 · 历年统计</div>
+      </div>
+      <div class="related-item">
+        <div class="label">组织名录</div>
+        <div>协会 · 联合会 · 地区机构</div>
+      </div>
+      <div class="related-item">
+        <div class="label">文化背景</div>
+        <div>术语起源 · 发展简史 · 代表性事件</div>
+      </div>
+    </div>
+
+    <p style="margin-top: 1.6rem; font-size: 0.9rem; color: #7a7a7a;">
+      本知识库持续更新。如需引用或转载，请注明来源并核对最新版本。更多内容可返回<a href="https://zh-index-pandasports.com">熊猫体育</a>主页浏览完整索引。
+    </p>
+
+  </div>
+</body>
+</html>
