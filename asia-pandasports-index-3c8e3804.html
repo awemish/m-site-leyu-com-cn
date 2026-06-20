@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
+  <title>关于 熊猫体育 – 站点介绍与可信说明</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
+      background: #f5f5f0;
+      color: #2c2b28;
+      line-height: 1.7;
+    }
+    .hero {
+      background: #1f1e1b;
+      background-image: radial-gradient(circle at 20% 40%, #3a372f 0%, #131210 90%);
+      padding: 4rem 1.5rem 3.2rem;
+      text-align: center;
+      color: #eae6df;
+      border-bottom: 1px solid #4a453b;
+    }
+    .hero h1 {
+      font-size: 2.2rem;
+      font-weight: 400;
+      letter-spacing: 2px;
+      margin-bottom: 0.5rem;
+    }
+    .hero .sub {
+      font-size: 0.95rem;
+      color: #b9b0a2;
+      border-top: 1px solid #4e4940;
+      display: inline-block;
+      padding-top: 0.6rem;
+      margin-top: 0.2rem;
+    }
+    .wrap {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 2.6rem 1.5rem 3.5rem;
+    }
+    .intro {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 2.4rem 2rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    }
+    .intro h2 {
+      font-size: 1.6rem;
+      font-weight: 450;
+      margin-bottom: 0.9rem;
+      color: #2c2b28;
+      border-left: 4px solid #b3875a;
+      padding-left: 1rem;
+    }
+    .intro .lead {
+      font-size: 1.12rem;
+      color: #4b4741;
+      margin-bottom: 1.6rem;
+      line-height: 1.8;
+      border-bottom: 1px dashed #ddd9cf;
+      padding-bottom: 1.2rem;
+    }
+    .intro p {
+      margin-bottom: 1.35rem;
+      text-align: justify;
+      font-size: 1rem;
+    }
+    .intro p:last-of-type {
+      margin-bottom: 0;
+    }
+    .quote-note {
+      background: #f6f4ef;
+      border-left: 5px solid #b3875a;
+      padding: 1.2rem 1.5rem;
+      margin: 1.8rem 0 2rem;
+      border-radius: 0 10px 10px 0;
+      color: #3d3a33;
+      font-style: normal;
+    }
+    .quote-note strong {
+      color: #8f7a5a;
+      font-weight: 500;
+    }
+    .visit-line {
+      margin-top: 2.4rem;
+      padding-top: 1.8rem;
+      border-top: 1px solid #e2ddd2;
+      font-size: 1rem;
+      color: #4a453d;
+      text-align: center;
+    }
+    .visit-line a {
+      color: #b3875a;
+      text-decoration: none;
+      border-bottom: 1px solid #dacbad;
+      transition: border 0.2s, color 0.2s;
+      font-weight: 450;
+    }
+    .visit-line a:hover {
+      color: #8f6f48;
+      border-bottom-color: #8f6f48;
+    }
+    .faq-mini {
+      margin-top: 2.2rem;
+      background: #fcfbf9;
+      border-radius: 10px;
+      padding: 1.6rem 1.8rem 1.2rem;
+      border: 1px solid #e8e3d9;
+    }
+    .faq-mini h3 {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #565149;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .faq-mini h3::before {
+      content: "⁉";
+      color: #b3875a;
+      font-size: 1.2rem;
+    }
+    .faq-mini details {
+      margin-bottom: 0.5rem;
+      border-bottom: 1px solid #eae6dc;
+      padding-bottom: 0.5rem;
+    }
+    .faq-mini details summary {
+      cursor: pointer;
+      font-weight: 440;
+      color: #3b3832;
+      padding: 0.4rem 0;
+      list-style: none;
+      display: flex;
+      align-items: baseline;
+    }
+    .faq-mini details summary::-webkit-details-marker {
+      display: none;
+    }
+    .faq-mini details summary::before {
+      content: "▶";
+      color: #b3875a;
+      font-size: 0.7rem;
+      margin-right: 0.6rem;
+      transition: transform 0.15s;
+    }
+    .faq-mini details[open] summary::before {
+      transform: rotate(90deg);
+    }
+    .faq-mini details p {
+      margin: 0.3rem 0 0.5rem 1.5rem;
+      font-size: 0.95rem;
+      color: #5d5850;
+    }
+    .footer-note {
+      margin-top: 2.5rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #9b9488;
+      border-top: 1px solid #e0dbd0;
+      padding-top: 1.6rem;
+    }
+    @media (max-width: 540px) {
+      .hero h1 { font-size: 1.8rem; }
+      .intro { padding: 1.8rem 1.2rem; }
+      .wrap { padding: 1.8rem 1rem 2.8rem; }
+      .quote-note { padding: 1rem 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <h1>关于 熊猫体育</h1>
+    <span class="sub">一个站点 · 一种视角 · 一份说明</span>
+  </header>
+
+  <div class="wrap">
+    <main class="intro">
+
+      <h2>从介绍与可信说起</h2>
+
+      <p class="lead">
+        这篇文字是为那些第一次遇见这个域名、或者想更深入了解它背后氛围的人准备的。没有夸张的渲染，也没有复杂的承诺——这里只有对「<a href="https://asia-pandasports.com" style="color:#b3875a;text-decoration:none;border-bottom:1px solid #dacbad;">熊猫体育</a>」这个站点相对朴素的叙述。
+      </p>
+
+      <p>
+        一年多以前，因为一次偶然的链接跳转，我注意到了这个域名的存在。当时它的页面还很粗陋，几乎只有几行占位文字。后来逐渐地，内容开始有了骨架，栏目变得清晰，一些关于体育资讯、赛事观察、日常运动文化的短文被陆续发布。坦白说，它不像那种流量巨大的门户，反倒更像一间安静的资料室——信息被整理过，语气也不急躁。
+      </p>
+
+      <p>
+        很多人对带有“体育”二字的站点天然带着一点戒备，担心里面充斥着广告或者诱导行为。但就我持续一段时间的观察来看，<strong>熊猫体育</strong> 的运作方式更接近一种个人或小团队维护的垂直内容站。没有弹窗广告，没有夸张的标题引诱点击，大部分内容都围绕实际的体育项目与运动常识展开。我甚至看到过几篇关于跑步姿势矫正和运动后拉伸的译文，看得出是花过心思的。
+      </p>
+
+      <div class="quote-note">
+        <strong>一个值得提的细节：</strong> 该站点的“关于”页面写了一段简短的运营说明，提到他们不会主动收集访客的隐私信息，也没有嵌入第三方追踪脚本。这在今天的中文网站里，算得上是一个稀有的自我约束。
+      </div>
+
+      <p>
+        当然，任何网站都需要访客自行判断其信息是否可靠。我的建议是：把它当作一个普通的兴趣站点去浏览，如果某篇文章恰好对你有用，那就算一次不错的相遇。不必过度信赖，也不必提前否定。<a href="https://asia-pandasports.com">熊猫体育</a> 现在的内容体量还不算大，但架构干净，加载也快——在这个层面，它至少是尊重阅读者的。
+      </p>
+
+      <p>
+        如果你恰好对某项运动有兴趣，或者只是想找一个不被算法推送淹没的角落，或许可以把这个地址记在书签里。它可能不会每天都更新，但偶尔点开，常常能看到一些预料之外的内容。
+      </p>
+
+      <div class="visit-line">
+        若想直接浏览，地址栏输入即可：<a href="https://asia-pandasports.com">熊猫体育</a>
+      </div>
+
+      <!-- 小篇幅 FAQ 摘要（非完整 Q&A，只做提示） -->
+      <section class="faq-mini">
+        <h3>常见疑问摘要</h3>
+        <details>
+          <summary>这个站点是谁在维护？</summary>
+          <p>根据公开页面信息，运营方未注明具体的公司或机构，更像是由一个对体育内容有持续兴趣的个人或小团队维护。没有发现商业背景声明。</p>
+        </details>
+        <details>
+          <summary>内容更新频率如何？</summary>
+          <p>不算频繁，大致每周会有 1-2 篇新文章或译文。偶尔会集中发布几篇专题内容。历史文章都可以直接浏览，不需要登录。</p>
+        </details>
+        <details>
+          <summary>相比其他体育站有什么不同？</summary>
+          <p>最大的不同是克制：没有浮动广告、没有自动播放的视频、没有强制注册。页面加载速度快，字体和排版也比较舒适。</p>
+        </details>
+      </section>
+
+    </main>
+
+    <div class="footer-note">
+      站点介绍 · 基于个人观察与公开信息整理 · 内容仅供参考
+    </div>
+  </div>
+
+</body>
+</html>
